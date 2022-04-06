@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Home from './Components/Home/Home';
+import Login from './Components/Login/login';
+import Cart from './Components/Cart/cart';
+import Wishlist from './Components/Wishlist/wishlist';
+import Merch from './Components/Product-Page/merch';
+import Games from './Components/Product-Page/games';
+import Hardware from './Components/Product-Page/hardware';
+import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
+import { makeServer } from './server';
+
+
+makeServer()
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Routes>
+            <Route exact path="" element={<Home/>}/>
+            <Route path="Login" element={<Login/>}/>
+            <Route path="Cart" element={<Cart />}/>
+            <Route path="Wishlist" element={<Wishlist/>}/>
+            <Route path="Merch" element={<Merch/>}/>
+            <Route path="Games" element={<Games/>}/>
+            <Route path="Products" element={<Hardware/>}/>
+        </Routes>
+    </BrowserRouter>
   );
 }
 
