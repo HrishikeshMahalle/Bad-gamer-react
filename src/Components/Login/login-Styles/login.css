@@ -1,0 +1,101 @@
+.Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family:Arial, Helvetica, sans-serif ;
+    background-image: linear-gradient(black, purple);
+}
+
+
+.login-page{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.old-login{
+    height: auto;
+    min-width:15rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 8px 1px yellow;
+    
+}
+
+.old-login .login-subhead{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    
+}
+
+.login-inputs{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-items{
+    display: flex;
+    min-width: 15rem; 
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.2rem;
+    border:2px solid rgb(20, 1, 1);
+    gap: 0.1rem;
+    
+}
+.input-items label{
+    padding: 0.5rem;
+}
+
+.input-items input{
+    all: unset;
+    padding: 1rem;
+}
+.input-items input:active{
+    all: unset;
+    padding: 1rem;
+    background: transparent;
+}
+
+.input-items-1{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 1rem;
+    align-items: center;
+}
+
+.input-items-1 input{
+    border: solid;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.input-items-1 label{
+    font-family:Arial, Helvetica, sans-serif ;
+    
+}
+
+.input-items.submit  {
+    padding: 0.5rem;
+    color: white;
+    background-color: purple;
+    border-radius: 0.5rem 0.5rem;
+}
+.input-items.submit button{
+    all: unset;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+}
