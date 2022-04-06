@@ -1,0 +1,57 @@
+.card-item.vertical{
+    max-width: 35rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 2px 2px  rgb(173, 185, 1);
+    margin: 0.5rem;
+}
+.card-item.vertical .card-info{
+    display: flex;
+    flex-direction: row;
+}
+.card-item.vertical .card-info .card-infoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.7;
+    gap: 0.5rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.card-author{
+    font-size: larger;
+    text-align: center;
+    padding: 0.5rem;
+}
+.card-item.vertical .card-info .card-image{
+    width: 100%;
+    flex: 0.4;
+}
+.card-item.vertical .card-info .card-image img{
+    max-inline-size: 80%;
+    aspect-ratio: 2/2;
+    object-fit: contain/cover;
+    object-position: top center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card-item.vertical .card-buttons{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card-item.vertical .card-buttons div a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.card-item.vertical .card-buttons .btn.icon a{
+    text-decoration: none;   
+}
+.card-item.vertical .card-buttons .btn{
+    padding: 1rem;
+}

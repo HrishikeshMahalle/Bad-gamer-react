@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  .head-container{
+    position:relative; 
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .head-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.3);
+    z-index: 0;
+  }
+  
+  
+  .bg-text-overlay{
+    position: absolute;
+    margin-top: 7vh;
+    height: 30rem;
+    width: 80%;
+    display: flex;
+    color: white;
+  }
+  .bg-info.game1{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bg-info-header{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1rem 1rem 0rem 1rem;
+    font-size: 2rem;
+  }
+  .bg-info-content{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0rem 1rem 1rem 1rem;
+    font-size: 2rem;
+  }
+  .bg-info-price{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    font-size: 2rem;
+    
+    gap: 1rem;
+    align-items: center;
+  }
+  .bg-info-price button{
+    all: unset;
+    font-size: 1.2rem;
+    background-color: #CD3D0F;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: 500;
+  }
+  
+  .head-cards{
+    position: absolute;
+    bottom: 0;
+    height: 14rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(transparent, black);
+    align-items: center;    
+    overflow-y: scroll;
+  }
+  .head-card-item{
+    height: 80%;
+    min-width: 18rem;
+    margin: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 3rem;
+    position: relative;
+  }
+  .head-card-item.active img{
+    border: 5px solid #CD3D0F;
+  }
+  .head-card-item img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    filter: brightness(1);
+    z-index: 0;
+    transition: 0.3s;
+  }
+  .head-card-item:hover img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    filter: brightness(0.3);
+    z-index: 0;
+  }
+  
+  .head-card-item:hover span{
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: 1;
+  }
+  .head-cards::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .mid-container{
+    background-image: linear-gradient(black, purple);
+    height: 45rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .mid-header{
+    width: 80%;
+    text-align: center;
+    
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .pdt-cards{
+    width: 80%;
+    margin-top:5rem;
+    display: flex;
+    gap: 1rem;
+    background: transparent;
+    flex-direction: row;
+    overflow-y:hidden;
+  }
+
+
+  
+  
+  .bottom-container{
+    background-image:linear-gradient(purple,#001E95);
+    width: 100%;
+    height: 45rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .bot-header{
+    width: 80%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .bot-cards{
+    width: 80%;
+    margin-top:5rem;
+    display: flex;
+    gap: 1rem;
+    background: transparent;
+    flex-direction: row;
+    overflow-y:hidden;
+  }
+  .footer{
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .starred{
+    color: rgb(202, 177, 36);
+  }
+  
+  .slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
