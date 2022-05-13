@@ -7,7 +7,7 @@ It is powered by *React* and use the *context API(context + reducer)* to manage 
 
 ## Preview
 
-#### 🔗 Link: (https://badgamerecom.netlify.app/)
+#### 🔗 Link: (https://ecombadgamer.netlify.app/)
 
 
 ## Features
