@@ -18,7 +18,7 @@
 }
 .header-nav-items .nav-item{
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 0.5rem;
     transition: 100ms;
 }
@@ -61,4 +61,8 @@
     text-decoration: none;
     all: unset;
     padding: 1rem;
+}
+
+.header .header-icons .icon-items{
+    font-size: 1.2rem;
 }
